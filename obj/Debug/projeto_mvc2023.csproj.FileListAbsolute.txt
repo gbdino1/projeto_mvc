@@ -1,0 +1,5 @@
+C:\Users\Gabriel\Source\Repos\projeto_mvc2023\projeto_mvc2023\obj\Debug\projeto_mvc2023.csproj.AssemblyReference.cache
+C:\Users\Gabriel\Source\Repos\projeto_mvc2023\projeto_mvc2023\obj\Debug\projeto_mvc2023.Properties.Resources.resources
+C:\Users\Gabriel\Source\Repos\projeto_mvc2023\projeto_mvc2023\obj\Debug\projeto_mvc2023.UI.Form1.resources
+C:\Users\Gabriel\Source\Repos\projeto_mvc2023\projeto_mvc2023\obj\Debug\projeto_mvc2023.csproj.GenerateResource.cache
+C:\Users\Gabriel\Source\Repos\projeto_mvc2023\projeto_mvc2023\obj\Debug\projeto_mvc2023.csproj.CoreCompileInputs.cache
