@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace projeto_mvc2023
-{
+{ 
     class LoginBLL
     {
         // Método que realiza a chamada do método de pesquisa na camada DAL.

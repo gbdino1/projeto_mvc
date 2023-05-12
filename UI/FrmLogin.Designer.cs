@@ -1,7 +1,7 @@
 ﻿
 namespace projeto_mvc2023.UI
 {
-    partial class Form1
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@ namespace projeto_mvc2023.UI
             // 
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnEntrar.Location = new System.Drawing.Point(298, 191);
+            this.btnEntrar.Location = new System.Drawing.Point(282, 184);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(218, 58);
             this.btnEntrar.TabIndex = 2;
@@ -72,14 +72,14 @@ namespace projeto_mvc2023.UI
             // 
             // txtbEmail
             // 
-            this.txtbEmail.Location = new System.Drawing.Point(265, 80);
+            this.txtbEmail.Location = new System.Drawing.Point(265, 81);
             this.txtbEmail.Name = "txtbEmail";
             this.txtbEmail.Size = new System.Drawing.Size(251, 20);
             this.txtbEmail.TabIndex = 3;
             // 
             // txtBSenha
             // 
-            this.txtBSenha.Location = new System.Drawing.Point(265, 136);
+            this.txtBSenha.Location = new System.Drawing.Point(265, 135);
             this.txtBSenha.Name = "txtBSenha";
             this.txtBSenha.Size = new System.Drawing.Size(251, 20);
             this.txtBSenha.TabIndex = 4;

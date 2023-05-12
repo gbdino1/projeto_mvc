@@ -1,8 +1,11 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Windows.Forms;
 
 namespace projeto_mvc2023
 {
@@ -10,7 +13,7 @@ namespace projeto_mvc2023
     {
         // criação de um método que consulta o banco e retorna se o
         // usuario foi encontardo ou não
-        public bool GetLoginDAL(LoginDTO loginDTO)
+        public bool GetLoginDAL(LoginDTO dadosLogin)
         {
             // conectar ao banco de dados
             try
@@ -18,27 +21,31 @@ namespace projeto_mvc2023
                 //criação da conexão
                 MySqlConnection conn = UtilsDAL.GetConnection();
 
-                if (conn.State == Connection.Open)
+                if (conn.State == ConnectionState.Open)
                 {
+                    //pequisar no bd se o usuário existe
                     string sql = $"SELECT * FROM usuarios" +
                                  $" WHERE " +
-                                 $"email = '{loginDTO.Email}' " +
+                                 $"email = '{dadosLogin.Email}' " +
                                  $"AND" +
-                                 $"senha = '{loginDTO.Senha}'";
+                                 $"senha = '{dadosLogin.Senha}'";
 
                     MySqlCommand retorno = new MySqlCommand(sql, conn);
 
-                    MySqlDataReader reader = retorno.ExecutarReader();
+                    MySqlDataReader reader = retorno.ExecuteReader();
 
                     if (reader.Read())
                     {
                         return true;
                     }
+
+                    return false;
                 }
             }
-            catch (System.Exception erro)
+            catch (Exception erro)
             {
                 MessageBox.Show(erro.Message);
+                return false;
             }
             return false;
         }

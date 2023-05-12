@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace projeto_mvc2023.UI
 {
-    public partial class Form1 : Form
+    public partial class FrmLogin : Form
     {
-        public Form1()
+        public FrmLogin()
         {
             InitializeComponent();
         }
@@ -21,16 +21,25 @@ namespace projeto_mvc2023.UI
         {
             LoginDTO loginDTO = new LoginDTO
             {
-                lblEmail = txtbEmail.Text,
-                lblSenha = txtBSenha.Text
+                Email = txtbEmail.Text,
+                Senha = txtBSenha.Text
             };
 
             LoginBLL login = new LoginBLL();
-            bool retorno = login.GetLoginBLL(loginDTO);
+            bool retorno = login.GetLoginBll(loginDTO);
 
             if (retorno)
             {
-                MessageBox.Show("lOGIN OK");
+                // MessageBox.Show("LOGIN OK");
+
+                // carregar o formMenu criando um obl
+                FrmMenu frmMenu = new FrmMenu();
+
+                //carregar o menu na tela
+                frmMenu.Show();
+
+                // ocultar o FrmLogin
+                this.Hide();
             }
             else
             {

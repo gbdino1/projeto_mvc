@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace projeto_mvc2023
-{
+{ 
     class LoginDTO
     {
         public string Email { get; set; }
